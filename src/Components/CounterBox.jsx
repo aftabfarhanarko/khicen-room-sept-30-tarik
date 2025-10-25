@@ -1,31 +1,35 @@
-import { ClipboardPen, CookingPot, ScrollText } from "lucide-react";
+import { ClipboardPen, CookingPot, Heater, ScrollText } from "lucide-react";
 import React from "react";
 
 const CounterBox = () => {
   return (
-    <div className="flex justify-between mt-6">
-      <div className="flex w-[30%] rounded-lg p-7 justify-between items-center border-2 border-yellow-400 border-dashed b ">
-        <ScrollText size={130} color="#FCB700" />
-
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="text-2xl">Counter Orders</h2>
-          <p className="text-3xl font-semibold">1</p>
+    <div className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 mt-6">
+      <div className="border-4 border-amber-400 border-dotted rounded-2xl  p-5">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          <ScrollText className="animate-pulse" color="#fcb700" size={100} />
+          <div className="text-xl text-center">
+            Current Orders
+            <h2 className="text-6xl font-bold">{0}</h2>
+          </div>
         </div>
       </div>
-      <div className="flex  rounded-lg p-7 justify-between  w-[30%] items-center border-2 border-yellow-400 border-dashed b ">
-        <CookingPot size={130} color="#FCB700" />
-
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="text-2xl">Currently Cooking</h2>
-          <p className="text-3xl font-semibold">1</p>
+      <div className="border-4 border-amber-400 border-dotted rounded-2xl  p-5">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          <Heater className="animate-pulse" color="#fcb700" size={100} />
+          <div className="text-xl text-center">
+            Currently Cooking
+            <h2 className="text-6xl font-bold">{0}</h2>
+          </div>
         </div>
       </div>
-      <div className="flex  rounded-lg p-7 justify-between  w-[30%] items-center border-2 border-yellow-400 border-dashed b ">
-        <ClipboardPen size={130} color="#FCB700" />
-
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="text-2xl">Ready for Serve</h2>
-          <p className="text-3xl font-semibold">1</p>
+ 
+      <div className="border-4 border-amber-400 border-dotted rounded-2xl  p-5">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          <CookingPot className="animate-pulse" color="#fcb700" size={100} />
+          <div className="text-xl text-center">
+            Ready for Serve
+            <h2 className="text-6xl font-bold">{0}</h2>
+          </div>
         </div>
       </div>
     </div>

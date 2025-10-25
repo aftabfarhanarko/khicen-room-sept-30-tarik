@@ -1,18 +1,18 @@
-import React from 'react';
-import CounterBox from '../CounterBox';
+import CounterBox from "../CounterBox";
 
 const FullItems = () => {
-    return (
-        <div>
-            <div>
-                <CounterBox></CounterBox>
-            </div>
-            <div>
-                
-            </div>
-            
-        </div>
-    );
+
+
+  return (
+    <div>
+      
+      <div className="">
+        {/* {myCoock.map((order) => (
+          <SideItem1 order={order} setCook={setCook} cook={cook} key={order.id}></SideItem1>
+        ))} */}
+      </div>
+    </div>
+  );
 };
 
 export default FullItems;
