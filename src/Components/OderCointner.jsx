@@ -24,6 +24,7 @@ const OderCointner = ({ promise }) => {
   };
 
   const handelCookinges = (cook) => {
+     cooking.coockAt = new Date().toLocaleDateString();
     const isExgist = complet.find((item) => item.id == cook.id);
     if (isExgist) {
       toast.success("This Dish Allready Serve");
