@@ -5,10 +5,12 @@ import Cooking from "./Cart/Cooking";
 import Ready from "./Cart/Ready";
 import { toast } from "react-toastify";
 
-
 const OderCointner = ({ promise }) => {
-  const orders = use(promise);
+  const data = use(promise);
+  const [orders, setOrders] = useState(data);
+
   const [cooking, setCooking] = useState([]);
+
   const [complet, setComplet] = useState([]);
 
   const handelOrder = (order) => {
@@ -20,18 +22,22 @@ const OderCointner = ({ promise }) => {
     const newItemCooking = [...cooking, order];
     setCooking(newItemCooking);
   };
-  console.log(cooking);
 
   const handelCookinges = (cook) => {
-     const isExgist = complet.find((item) => item.id == cook.id);
+    const isExgist = complet.find((item) => item.id == cook.id);
     if (isExgist) {
       toast.success("This Dish Allready Serve");
       return;
     }
     const newItemCooking = [...complet, cook];
     setComplet(newItemCooking);
+
+    const meny = cooking.filter((item) => item.id !== cook.id);
+    setCooking(meny);
+
+    const myOrder = orders.filter((one) => one.id !== cook.id);
+    setOrders(myOrder);
   };
-  console.log(complet);
 
   return (
     <div>
