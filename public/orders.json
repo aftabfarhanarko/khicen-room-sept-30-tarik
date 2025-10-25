@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "order_no": "ORD-1001",
+    "order_title": "Chicken Biryani",
+    "table_no": 5,
+    "quantity": 2,
+    "special_instruction": "Please make it less spicy than usual, add extra raita on the side, and ensure the rice is well-cooked and fluffy.",
+    "waiterId": "W-01"
+  },
+  {
+    "id": 2,
+    "order_no": "ORD-1002",
+    "order_title": "Grilled Fish",
+    "table_no": 3,
+    "quantity": 1,
+    "special_instruction": "Serve with fresh lemon wedges, add a small portion of garlic butter on top, and make sure it is grilled thoroughly but not burnt.",
+    "waiterId": "W-02"
+  },
+  {
+    "id": 3,
+    "order_no": "ORD-1003",
+    "order_title": "Cheese Burger",
+    "table_no": 7,
+    "quantity": 3,
+    "special_instruction": "Add extra cheese slices, do not include onions or pickles, and please toast the buns lightly so they stay crunchy.",
+    "waiterId": "W-03"
+  },
+  {
+    "id": 4,
+    "order_no": "ORD-1004",
+    "order_title": "Pasta Alfredo",
+    "table_no": 2,
+    "quantity": 2,
+    "special_instruction": "Make the sauce creamy with extra mushrooms, serve with garlic bread on the side, and sprinkle a bit of oregano on top before serving.",
+    "waiterId": "W-01"
+  },
+  {
+    "id": 5,
+    "order_no": "ORD-1005",
+    "order_title": "Tandoori Chicken",
+    "table_no": 4,
+    "quantity": 1,
+    "special_instruction": "Cook it well so it is crispy outside but juicy inside, add extra salad on the side, and avoid using too much oil in the marination.",
+    "waiterId": "W-04"
+  },
+  {
+    "id": 6,
+    "order_no": "ORD-1006",
+    "order_title": "Paneer Butter Masala",
+    "table_no": 6,
+    "quantity": 2,
+    "special_instruction": "Make the gravy thick and creamy, add a little extra butter on top before serving, and avoid making it too sweet.",
+    "waiterId": "W-02"
+  },
+  {
+    "id": 7,
+    "order_no": "ORD-1007",
+    "order_title": "Caesar Salad",
+    "table_no": 8,
+    "quantity": 1,
+    "special_instruction": "Use fresh romaine lettuce, add extra parmesan cheese, keep the croutons crunchy, and serve the dressing on the side.",
+    "waiterId": "W-03"
+  }
+]
